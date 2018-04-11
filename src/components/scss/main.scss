@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+//variable 
+
+$mainfont: 'Roboto', sans-serif;
+
+// GLOBAL header styles 
+
+
+.nav_bar {
+    position: absolute;
+    width: 100%;
+    height: 57px;
+    background-color: rgb(26,95,117);
+    z-index: 1;
+    overflow: hidden;
+
+}
+
+.nav_bt_conteiner h1{
+    text-transform: uppercase;
+    font-family: $mainfont;
+    color: white;
+    margin: 14px 0 0 0;
+    font-size: 1.5em;
+}
+
+.nav_bt_conteiner input{
+    width: 100%;
+    max-width: 4850px;
+    height: 35px;
+    margin: 10px 0 0 0;
+    position: absolute;
+    padding: 0 0 0 40px;
+}
+
+i.fa-map-marker{
+    color: red;
+    font-size: 1.4em;
+    padding: 16px 0 0 8px;
+    position: absolute;
+    z-index: 1;
+}
+
+i.fa-sort-down {
+    color: black;
+    font-size: 1.1em;
+    padding: 15px 0 0 28px;
+    position: absolute;
+    z-index: 1;
+}
+
+i.fa-search{
+    color: rgb(62,68,81);
+    font-size: 1em;
+    margin: 19px 0 0 0;
+    right: 0;
+    position: absolute;
+    z-index: 1;
+}
+
+i.fa-bell {
+    color: black;
+    font-size: 1.1em;
+    padding: 19px 0 0 28px;
+    position: absolute;
+    z-index: 1;
+}
+
+.nav_bt_conteiner img {
+    width: 40px;
+    height: 40px;
+    margin: 8px 0 5px 0;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    background-color: white;
+}
+
+
+.header {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.header::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0, 0.5);
+    z-index: 0;
+}
+
+.header img {
+    width: 100%;
+    height: 60vh;
+}
+
+
+
+
+
+// GLOBAL end of header styles
+
+// START main container style
+
+.main {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin: -200px 0 0 0;
+    color: white;
+    font-family: $mainfont;
+    padding: 0 0 100px 0;
+}
+
+.leftConteiner i.fa-leaf{
+    color: white;
+    font-size: 1.8em;
+    display: inline;
+    position: relative;
+    z-index: 1;
+    padding: 0;
+    left: 40px;
+}
+
+.leftConteiner h1{
+    display: inline;
+    position: relative;
+    left: 50px;
+}
+
+.leftConteiner p{
+    position: relative;
+    left: 81px;
+    padding: 0 0 20px 0;
+}
+
+.rightConteiner h1 {
+    position: relative;
+    left: 20px;
+}
+
+.rightConteiner span {
+    position: relative;
+    left: 20px;
+}
+
+.leftTable {
+    width: 100%;
+    min-height: 100px;
+    max-height: 250px;
+    background-color: rgb(255, 255, 255);
+    margin: 0 auto 30px auto;
+    color: black;
+    box-shadow: 0px 0px 7px 0px rgb(214,214,214);
+    padding: 27px 0 0 0;
+}
+
+.leftTable i:first-child{
+    position: relative;
+    top: 10px;
+    left: 40px;
+    font-size: 1.5em;
+}
+
+.leftTable h1{
+    display: inline;
+    position: relative;
+    font-size: 1.2em;
+    left: 45px;
+    top: 10px;
+}
+
+.leftTable i:nth-child(3){
+    position: relative;
+    top: 10px;
+    right: 40px;
+    float: right;
+    font-size: 1.5em;
+    transition: .4s;
+}
+
+
+.rotate {
+    transform: rotate(180deg);
+}
+
+.rotate2 {
+    transform: rotate(180deg);
+}
+
+.leftTable aside{
+    position: relative;
+    top: 60px;
+    left: 30px;
+    max-width: 90%;
+    text-align: justify;
+    font-size: 1em;
+    padding: 0 0 100px 0;
+}
+
+.fade-enter-active, .fade-leave-active {
+    transition: opacity .8s;
+  }
+  .fade-enter, .fade-leave-to {
+    opacity: 0;
+  }
+
+.rightTable {
+    width: 240px;
+    max-width: 240px;
+    height: 100%;
+    max-height: 410px;
+    background-color: rgb(255, 255, 255);
+    margin: 0 auto;
+    transform: translateX(-55px);
+    box-shadow: 0px 0px 7px 0px rgb(65, 62, 62);
+}
+
+.rightTable img:first-child{
+    border-radius: 4px;
+    position: relative;
+    transform: translateY(-10px);
+    left: 10px;
+    background-color: white;
+    box-shadow: 0px 0px 7px 0px rgb(107, 104, 104);
+}
+
+.rightTable i.fa-star {
+    position: relative;
+    float: right;
+    padding: 17px;
+    color: rgb(0,82,151);
+}
+
+.rightTable img:nth-child(3){
+    position: relative;
+    margin: 0 auto;
+    transform: translateX(12px);
+    box-shadow: 0px 0px 7px 0px rgb(65, 62, 62);
+    max-width: 100%;
+    height: auto;
+
+}
+
+.rightTable .fa-check-square {
+    position: relative;
+    display: block;
+    left: 10px;
+    top: 10px;
+    font-size: 1.3em;
+    color: rgb(0,82,151);
+}
+
+.rightTable h1 {
+    font-size: 1.2em;
+    position: relative;
+    left: 40px;
+    transform: translateY(-12px);
+    color: black;
+}
+
+.rightTable p {
+    position: relative;
+    left: 10px;
+    color: black;
+}
+
+.rightTable p::before {
+    content: "";
+    position: absolute;
+    width: 220px;
+    height: 1px;
+    background-color: grey;
+    bottom: -5px;
+}
+.rightTable i.fa-map-marker {
+    position: relative;
+    left: 5px;
+    transform: translateY(-17px);
+    display: inline;
+}
+
+.rightTable h2 {
+    color: black;
+    position: relative;
+    font-size: 1em;
+    left: 40px;
+    transform: translateY(-27px);
+    width: 30px;
+}
+
+// END main container style
+
+.h1 {
+    font-family: $mainfont;
+    font-size: 1.7em;
+    position: relative;
+    transform: translateY(-90px);
+    left: 40px;
+}
+
+.slide_container {
+    font-family: $mainfont;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+
+
+
+
+// media query
+
+@media (max-width: 1200px ){
+    .rightTable {
+        width: 240px;
+        max-width: 240px;
+        height: 100%;
+        max-height: 410px;
+        background-color: rgb(255, 255, 255);
+        margin: 0 auto;
+        transform: translateX(-25px);
+        box-shadow: 0px 0px 7px 0px rgb(65, 62, 62);
+    }
+}
+
+@media (max-width: 990px){
+    .rightTable {
+        width: 240px;
+        max-width: 240px;
+        height: 100%;
+        max-height: 410px;
+        background-color: rgb(255, 255, 255);
+        margin: 0 auto;
+        transform: translateX(-5px);
+        box-shadow: 0px 0px 7px 0px rgb(65, 62, 62);
+    }
+
+    .leftTable {
+        width: 100%;
+        min-height: 100px;
+        max-height: 350px;
+        background-color: rgb(255, 255, 255);
+        margin: 0 auto 30px auto;
+        color: black;
+        box-shadow: 0px 0px 7px 0px rgb(214,214,214);
+        padding: 27px 0 0 0;
+    }
+
+    .leftTable i:nth-child(3){
+        position: relative;
+        top: 10px;
+        right: 40px;
+        float: right;
+        font-size: 1em;
+        
+    }
+    .leftTable h1{
+        display: inline;
+        position: relative;
+        font-size: 1em;
+        left: 45px;
+        top: 10px;
+    }
+}
+
